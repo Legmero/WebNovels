@@ -5,6 +5,104 @@
     <title>WebNovel Library</title>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=search" />
 </head>
+<style>
+    .row {
+      display: flex;
+      justify-content: center; /* centers the search bar horizontally */
+      padding: 40px 0; /* add vertical space if needed */
+      background-color:#3b0a4d; /* optional background to visualize the row */
+    }
+    .search{
+        --padding:14px ;
+        width: max-content;
+        display:flex;
+        align-items: center;
+        padding:var(--padding);
+        border-radius: 28px;
+        background: #723f84;
+        width: 800px;
+        transition: box-shadow 0.25s ;
+    }
+    .search:focus-within{
+        box-shadow:0 0 2px rgba(0,0,0,0.75)
+    }
+    .search-input{
+        font-size: 16px;
+        font-family: 'Lexend',sans-serif;
+        color: #fdfdfd;
+        margin-left:var(--padding);
+        outline: none;
+        background: transparent;
+        border: none;
+        width: 400px;
+        flex: 1;
+    }
+
+    .search-input::placeholder{
+        color: rgba(0,0,0,0.25);
+    }
+    .search-icon {
+      color: white;
+    }
+    .container {
+      display: flex;
+      align-items: flex-start; /* aligns items at the top */
+      padding: 40px;
+      gap: 20px;
+    }
+    .button{
+        font-size: 150%;
+        background-color: #a64ac7;
+        color: white;
+        border-radius: 5px;
+    }
+    .button1{
+        font-size: 150%;
+        font-family: 'Times New Roman', Times, serif;
+        background-color: #a64ac7;
+        color: white;
+        border-radius: 7px;
+        padding: 13px;
+        margin-right: 10px;
+        margin-top: 10px;
+    }
+    .button2{
+        font-size: 150%;
+        font-family: 'Times New Roman', Times, serif;
+        background-color: #a64ac7;
+        color: white;
+        border-radius: 7px;
+        padding: 10px;
+        width: max-content;
+        margin-right: 12px;
+        margin-top: 10px;
+    }
+    .tema{
+        background-color: #9932cc;
+        display: flex;
+        align-items: center;
+        justify-items:center;
+        padding: 40px;
+    }
+    .experiment{
+        background-color: #63307e;
+        width: max-content;
+        margin-left: 600px;
+        align-items: center;
+        justify-content: center;
+        display: flex;
+    }
+    .experiment2{
+       background-color: #63307e;
+        width: 1280px;
+        margin-left: 600px;
+        align-items: center;
+        justify-content: center;
+        display: flex;
+        border-radius: 5px; 
+        padding-left: 25px;
+    }
+</style>
 <body bgcolor="#3b0a4d">
 <table>
     <tr>
@@ -20,8 +118,84 @@
         <td><a href="WebNovel Library.html"style="color: white;font-size: 300%;text-decoration: none;">WebNovel Library</a></td>
         <td width=30%><img src="https://cdn-icons-png.flaticon.com/512/6522/6522516.png "height=100px width="100px" align="right"></td>
         <td><img src="https://static-00.iconduck.com/assets.00/settings-icon-490x512-5dn97j0b.png" height="80px" width="80px" align="right"></td>
-        
     </tr>
 </table>
 <hr>
+<table class="experiment">
+    <tr>
+        <td style="color: white;font-size: 200%;">Genre/Category</td>
+    </tr>
+    <tr><td><hr></td></tr>
+    <tr>
+        <Td> <button class="button1">All</button> <button class="button1">Action</button>  <button class="button1">Adventure</button> <button class="button1">Drama</button> <button class="button1">Fantasy</button> <button class="button1">Martial Arts</button> <button class="button1">Romance</button> <button class="button1">Tragedy</button> <button class="button1">Xuanhuan</button> </Td>
+    </tr>
+    <tr>
+        <td><button class="button2">Comedy</button><button class="button2">Slice of Life</button><button class="button2">Mystery</button><button class="button2">Supernatural</button><button class="button2">Psychological</button><button class="button2">Sci-fi</button><button class="button2">Xianxia</button><button class="button2">School Life</button><button class="button2">Josei</button><button class="button2">Wuxia</button></td>
+    </tr>
+    <tr>
+        <td><button class="button1">Horror</button><button class="button1">Mecha</button><button class="button1">Historical</button><button class="button1">Shoujo</button><button class="button1">Seinen</button><button class="button1">Sports</button><button class="button1">Yaoi</button><button class="button1">Video Games</button><button class="button1">Magical Realism</button><button class="button1">Eastern Fantasy</button></td>
+    </tr>
+    <tr>
+        <td><button class="button2">Gender Bender</button><button class="button2">Lolicon</button>
+    </tr>
+    <tr><TD><BR></TD></tr>
+    <tr><TD><BR></TD></tr>
+    
+</table>
+<table class="experiment">
+    <tr>
+        <td style="color: white; font-size: 200%;width: 600px;">Order by</td>
+        <td style="color: white; font-size: 200%;width: 643px">Status</td>
+    </tr>
+    <tr>
+        <td><hr style="width: 130px;" align="left"></td>
+        <td><hr style="width: 80px;" align="left"></td>
+    </tr>
+    <tr>
+        <td><button class="button1">New</button> <button class="button1">Popular</button> <button class="button1">Updates</button></td>
+        <TD><button class="button1">All</button> <button class="button1">Completed</button> <button class="button1">Ongoing</button></TD>
+    </tr>
+    <tr><Td><BR></Td></tr>
+    <tr><Td><BR></Td></tr>
+    <tr><Td><BR></Td></tr>
+    <tr>
+        <td style="color: rgb(255, 255, 255); font-size: 300%;width: 650px;">Explore The Most Popular Light Novels</td>
+        <td style="width: 593px;"></td>
+    </tr>
+    <tr>
+        <td style="color: white;font-size: 155%;">Discover newly published and popular novels across all categories.</td>
+    </tr>
+    <tr><Td colspan="2"><HR></Td></tr>
+</table>
+<table style="width: 1301px;background-color: #63307e; margin-left: 600px;">
+    <tr>
+        <Td style="margin-right: 20px;"><img src="https://m.media-amazon.com/images/I/515fsT6ty4L._UF1000,1000_QL80_.jpg" style="width: 200px;height: 350px;margin-left: 10px;"></Td>
+        <TD style="margin-right: 10px;"><img src="https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1723688384i/58826678.jpg"style="width: 200px;height: 350px;margin-left: 10px;"></TD>
+        <td style="margin-right: 20px;"><img src="https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1524131925i/39892810.jpg"style="width: 200px;height: 350px;margin-left: 10px;"></td>
+        <td style="margin-right: 20px;"><img src="https://static.lightnovelpub.com/bookcover/300x400/00548-the-beginning-after-the-end.jpg" style="width: 200px;height: 350px;margin-left: 10px;"></td>
+        <td style="margin-right: 20px;"><img src="https://static.lightnovelpub.com/bookcover/300x400/01678-advent-of-the-three-calamities.jpg"style="width: 200px;height: 350px;margin-left: 10px;"></td>
+    </tr>
+    <tr>
+        <td style="margin-right: 50px;color: white;font-size: 200%;"> Shadow Slave</td>
+        <td style="margin-right: 10px;color: white;font-size: 200%;">Lord of The Mysteries</tD>
+        <td style="margin-right: 20px;color: white;font-size: 200%;">Reverend Insanity</td>
+        <td style="margin-right: 20px;color: white;font-size: 160%;">The Beginning   After The End</td>
+        <td style="margin-right: 20px;color: white;font-size: 160%;">Advent Of The Three Calamities</td>
+    </tr>
+    <Tr><TD><BR></TD></Tr>
+    <tr>
+        <Td style="margin-right: 20px;"><img src="https://static.lightnovelpub.com/bookcover/300x400/01238-the-authors-pov.jpg?v=18071011" style="width: 200px;height: 350px;margin-left: 10px;"></Td>
+        <TD style="margin-right: 10px;"><img src="https://static.lightnovelpub.com/bookcover/300x400/01513-circle-of-inevitability.jpg?v=12041223"style="width: 200px;height: 350px;margin-left: 10px;"></TD>
+        <td style="margin-right: 20px;"><img src="https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1602711083i/55673074.jpg"style="width: 200px;height: 350px;margin-left: 10px;"></td>
+        <td style="margin-right: 20px;"><img src="86.png" style="width: 200px;height: 350px;margin-left: 10px;"></td>
+        <td style="margin-right: 20px;"><img src="https://static.lightnovelpub.com/bookcover/300x400/01325-i-am-the-fated-villain.jpg"style="width: 200px;height: 350px;margin-left: 10px;"></td>
+    </tr>
+    <tr>
+        <td style="margin-right: 50px;color: white;font-size: 200%;">The Author's POV</td>
+        <td style="margin-right: 10px;color: white;font-size: 200%;">Lord of The Mysteries 2</tD>
+        <td style="margin-right: 20px;color: white;font-size: 200%;">Omniscient readers Viewpoint</td>
+        <td style="margin-right: 20px;color: white;font-size: 160%;">86-Eighty-Six</td>
+        <td style="margin-right: 20px;color: white;font-size: 160%;">I Am The Fated Villian</td>
+    </tr>
+</table>
 
