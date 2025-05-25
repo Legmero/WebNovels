@@ -5,6 +5,103 @@
     <title>WebNovel Library</title>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=search" />
 </head>
+<style>
+    .row {
+      display: flex;
+      justify-content: center; /* centers the search bar horizontally */
+      padding: 40px 0; /* add vertical space if needed */
+      background-color:#3b0a4d; /* optional background to visualize the row */
+    }
+    .search{
+        --padding:14px ;
+        width: max-content;
+        display:flex;
+        align-items: center;
+        padding:var(--padding);
+        border-radius: 28px;
+        background: #723f84;
+        width: 800px;
+        transition: box-shadow 0.25s ;
+    }
+    .search:focus-within{
+        box-shadow:0 0 2px rgba(0,0,0,0.75)
+    }
+    .search-input{
+        font-size: 16px;
+        font-family: 'Lexend',sans-serif;
+        color: #fdfdfd;
+        margin-left:var(--padding);
+        outline: none;
+        background: transparent;
+        border: none;
+        width: 400px;
+        flex: 1;
+    }
+
+    .search-input::placeholder{
+        color: rgba(0,0,0,0.25);
+    }
+    .search-icon {
+      color: white;
+    }
+    .container {
+      display: flex;
+      align-items: flex-start; /* aligns items at the top */
+      padding: 40px;
+      gap: 20px;
+    }
+    .button{
+        font-size: 150%;
+        background-color: #a64ac7;
+        color: white;
+        border-radius: 5px;
+    }
+    .button1{
+        font-size: 150%;
+        font-family: 'Times New Roman', Times, serif;
+        background-color: #a64ac7;
+        color: white;
+        border-radius: 7px;
+        padding: 13px;
+        margin-right: 10px;
+        margin-top: 10px;
+    }
+    .button2{
+        font-size: 150%;
+        font-family: 'Times New Roman', Times, serif;
+        background-color: #a64ac7;
+        color: white;
+        border-radius: 7px;
+        padding: 10px;
+        width: max-content;
+        margin-right: 12px;
+        margin-top: 10px;
+    }
+    .tema{
+        background-color: #9932cc;
+        display: flex;
+        align-items: center;
+        justify-items:center;
+        padding: 40px;
+    }
+    .experiment{
+        background-color: #63307e;
+        width: 1200px;
+        margin-left: 600px;
+        align-items: center;
+        justify-content: center;
+        display: flex;
+    }
+    .experiment2{
+       background-color: #63307e;
+        width: 1200px;
+        margin-left: 600px;
+        align-items: center;
+        justify-content: center;
+        display: flex;
+        padding-left: 25px;
+    }
+</style>
 <body bgcolor="#3b0a4d">
 <table>
     <tr>
@@ -24,4 +121,80 @@
     </tr>
 </table>
 <hr>
+<table class="experiment" style="margin-top: 20px;">
+    <tr>
+        <td style="color: white;font-size: 230%; ">Recently Added Novel Chapters</td>
+    </tr>
+    <tr>
+        <td style="color: white;font-size: 160%;margin-top: 10px; ">The new novel chapters list is based on original or translated novel chapters published in the last few days. You can follow new episodes of the most popular light novels on our platform.</td>
+    </tr>
+    <tr><td><br></td></tr>
+    <tr>
+        <td><hr width="95%"></td>
+    </tr>
+</table>
+<table class="experiment">
+    <tr>
+        <td width="100px"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcROKxvGd5gtOyGafzgTkquIDnf3BphzE-nzrA&s" style="width: 100px; height:100px;"></td>
+        <td width="500px" style="color: white; font-size: 200%;">Divine Emperor of Death</td>
+        <td width="100px"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQm-2yjn-bhINGX4jAWFdceInv0RDd9W_l9Sg&s" style="width: 100px; height:100px;"></td>
+        <td width="500px" style="color: white;font-size: 200%;">Armipotent</td>
+    </tr>
+    <tr>
+        <td width="100px"><img src="https://m.media-amazon.com/images/I/61eU+L-gKSL._UF1000,1000_QL80_.jpg" style="width: 100px; height:100px;"></td>
+        <td width="500px" style="color: white; font-size: 200%;">Walker of The Worlds</td>
+        <td width="100px"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTIuO7dz0IHP03R3cY5gM2ResLneSzX2_m8kw&s" style="width: 100px; height:100px;"></td>
+        <td width="500px" style="color: white;font-size: 200%;">Stealing Spree</td>
+    </tr>
+    <tr>
+        <td width="100px"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTctx8or2R0-qmxu2NVGAJWjfrWcgR2AYV9kw&s" style="width: 100px; height:100px;"></td>
+        <td width="500px" style="color: white; font-size: 200%;">Greatest Legacy of the Magus Universe</td>
+        <td width="100px"><img src="https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1669831164i/63895684.jpg" style="width: 100px; height:100px;"></td>
+        <td width="500px" style="color: white;font-size: 200%;">Alchemy Emperor of the Divine Dao</td>
+    </tr>
+    <tr>
+        <td width="100px"><img src="https://cdn.novelupdates.com/images/2017/01/51-lt4qY1SL.jpg" style="width: 100px; height:100px;"></td>
+        <td width="500px" style="color: white; font-size: 200%;">Martial Arts Asura(WebNovel)</td>
+        <td width="100px"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSHT69dYSJTv5eZm-F0Z3jwFUUtsxp9Z9nwZA&s" style="width: 100px; height:100px;"></td>
+        <td width="500px" style="color: white;font-size: 200%;">Village Head's Debauchery</td>
+    </tr>
+    <tr>
+        <td width="100px"><img src="https://media.novellive.com/novel/the-primordial-record.jpg" style="width: 100px; height:100px;"></td>
+        <td width="500px" style="color: white; font-size: 200%;">The Primordial Record</td>
+        <td width="100px"><img src="https://m.media-amazon.com/images/I/61sufEZnh2L._UF350,350_QL50_.jpg" style="width: 100px; height:100px;"></td>
+        <td width="500px" style="color: white;font-size: 200%;">The First Legendary Beast Master</td>
+    </tr>
+    <tr>
+        <td width="100px"><img src="https://cdn.wuxiaworld.com/images/covers/tml.webp?v=25e7c7e8786f2a1550209bff7144329b835a4ef7" style="width: 100px; height:100px;"></td>
+        <td width="500px" style="color: white; font-size: 200%;">The Mirror Legacy</td>
+        <td width="100px"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-F586FC1kb9sgQAQmZ_cMqBR72vbv_M4SOA&s" style="width: 100px; height:100px;"></td>
+        <td width="500px" style="color: white;font-size: 200%;">Infinite Mana in The Apocalypse (WN)</td>
+    </tr>
+    <tr>
+        <td width="100px"><img src="https://static.wikia.nocookie.net/eternal-cultivation-of-alchemy/images/4/4f/Novel_cover_1.jpg/revision/latest/scale-to-width/360?cb=20241030145849" style="width: 100px; height:100px;"></td>
+        <td width="500px" style="color: white; font-size: 200%;">Eternal Cultivation of Alchemy</td>
+        <td width="100px"><img src="https://static.wikia.nocookie.net/complete-martial-arts-attributes/images/b/ba/600.jpg/revision/latest?cb=20211008091845" style="width: 100px; height:100px;"></td>
+        <td width="500px" style="color: white;font-size: 200%;">Complete Martial Arts Attributes</td>
+    </tr>
+    <tr>
+        <td width="100px"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTjqiyTB7L8t0UClNdt4ZmgIp7MuAROQgjhgA&s" style="width: 100px; height:100px;"></td>
+        <td width="500px" style="color: white; font-size: 200%;">Mysteries of Immortal Puppet Master</td>
+        <td width="100px"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQhItCwWwg_oLss6HlkMRrjBACGBAQQGtWPIg&s" style="width: 100px; height:100px;"></td>
+        <td width="500px" style="color: white;font-size: 200%;">Beast Taming: Starting From Zero</td>
+    </tr>
+    <tr>
+        <td width="100px"><img src="https://m.media-amazon.com/images/I/61+WKPQPOKL._UF1000,1000_QL80_.jpg" style="width: 100px; height:100px;"></td>
+        <td width="500px" style="color: white; font-size: 200%;">Atticus's Odyssey: Reincarnated Into A Playground</td>
+        <td width="100px"><img src="https://m.media-amazon.com/images/I/61Z5B3MFhcL._UF1000,1000_QL80_.jpg" style="width: 100px; height:100px;"></td>
+        <td width="500px" style="color: white;font-size: 200%;">Kill The Sun</td>
+    </tr>
+    <tr>
+        <td width="100px"><img src="https://m.media-amazon.com/images/I/515fsT6ty4L._UF1000,1000_QL80_.jpg" style="width: 100px; height:100px;"></td>
+        <td width="500px" style="color: white; font-size: 200%;">Shadow Slave</td>
+        <td width="100px"><img src="https://static.wikia.nocookie.net/infinite-bloodcore/images/a/a6/Infinite_Bloodcore_Cover.jpg/revision/latest?cb=20211203162918" style="width: 100px; height:100px;"></td>
+        <td width="500px" style="color: white;font-size: 200%;">Infinite Bloodcore</td>
+    </tr>
+</table>
+</body>
+</html>
 
